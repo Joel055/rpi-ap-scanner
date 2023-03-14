@@ -57,7 +57,7 @@ def meny():
     val = 0
 
     while True:
-        print(f"\n\n-=-=-=-=-=  AP-SCANNER =-=-=-=-=-=-\n\n1. Start\n2. Print readings ({runcount}) \n3.Get highest signalstrenghts \n4. Generate heatmap (hardcoded) \n5. Exit")
+        print(f"\n\n-=-=-=-=-=  AP-SCANNER =-=-=-=-=-=-\n\n1. Start\n2. Print readings ({runcount})\n3.Get highest signalstrenghts \n4. Generate heatmap (hardcoded) \n5. Exit")
 
         try:
             val = int(input("\nChoice: "))
