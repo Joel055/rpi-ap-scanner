@@ -66,7 +66,7 @@ def meny():
         try:
             val = int(input("\nChoice: "))
 
-            if val not in range(1, 5):
+            if val not in range(1, 6):
                 raise ValueError
             
             else:
