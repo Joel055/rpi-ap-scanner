@@ -38,12 +38,16 @@ def main():
             case 2:
                 if runcount != 0:
                     print(f"\n{json.dumps(data)}")
+                    
                 else:
-                    print("No data.\n")
+                    print("\nNo data")
 
             case 3:
                if runcount != 0:
                     extract_best_sig()
+  
+               else:
+                   print("\nNo data")
 
             case 4:
                heatmap.generate() # Hårdkodad mätdata
@@ -57,7 +61,7 @@ def meny():
     val = 0
 
     while True:
-        print(f"\n\n-=-=-=-=-=  AP-SCANNER =-=-=-=-=-=-\n\n1. Start\n2. Print readings ({runcount})\n3.Get highest signalstrenghts \n4. Generate heatmap (hardcoded) \n5. Exit")
+        print(f"\n\n-=-=-=-=-=  AP-SCANNER =-=-=-=-=-=-\n\n1. Start\n2. Print readings ({runcount})\n3.Get highest signal strenghts\n4. Generate heatmap (hardcoded) \n5. Exit")
 
         try:
             val = int(input("\nChoice: "))
@@ -182,7 +186,7 @@ def extract_best_sig(): # Extraherar bästa dBm värdet från 2.4 och 5GHz kanal
         lowest2.append(max(all2))
         lowest5.append(max(all5))
         
-    print(f"2.4 GHz: {lowest2}\n5 GHz: {lowest5}")
+    print(f"\n2.4 GHz: {lowest2}\n5 GHz: {lowest5}")
 
 
 def create_json(timestamp): # Skapar jsonfil med mätdata och appendar det till en lokal fil
