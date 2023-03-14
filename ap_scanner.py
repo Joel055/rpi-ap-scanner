@@ -9,7 +9,6 @@ import subprocess as sp
 from scapy.all import *
 
 
-
 CHANNEL_SCAN_TIMEOUT = 3 # antal sekunder som väntas på paket i scan
 CHANNEL_SCAN_COUNT = 20 # max antal paket för varje scan
 data = {}
