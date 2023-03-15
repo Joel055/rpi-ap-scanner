@@ -1,3 +1,4 @@
+# Specifically made for Kali Linux on Raspberry Pi 4b
 import re
 import sys
 import subprocess as sp
